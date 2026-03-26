@@ -1,0 +1,12 @@
+
+f = open("team_data.txt", "w")
+f.write("Name: Raki\n")
+f.write("Age: 24\n")
+f.write("Role: Engineer\n")
+print( f.closed)
+f.close()
+f = open("team_data.txt", "r")
+content = f.read()
+print(content)
+f.close()
+print( f.closed)
